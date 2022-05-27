@@ -1,8 +1,28 @@
 window.onload = function () {
-    var app = document.getElementById('text-writer');
+    let buttons = document.getElementsByClassName('tab-button');
 
+    Array.prototype.forEach.call(buttons, function(button) {
+        button.addEventListener('click', function (e) {
+            let targetTab = e.target.getAttribute('data-tag');
+        
+            let folders = document.getElementsByClassName('folder');
+            Array.prototype.forEach.call(folders, function (folder) {
+                let tab = folder.getAttribute('data-tab');
+                if (targetTab === 'all' || targetTab === tab) {
+                    folder.classList.add('visible');
+                } else {
+                    folder.classList.remove('visible');
+                }
+            });
 
-    var typewriter = new Typewriter(app, {
+            document.querySelector('button.active').classList.remove('active');
+            button.classList.add('active');
+        })
+    });
+
+    let app = document.getElementById('text-writer');
+
+    let typewriter = new Typewriter(app, {
     loop: true,
     delay: 75,
     });
@@ -13,10 +33,10 @@ window.onload = function () {
     .typeString('Web Design')
     .pauseFor(300)
     .deleteChars(10)
-    .typeString('3D Design')
+    .typeString('Sviluppo front-End')
     .pauseFor(300)
-    .deleteChars(9)
-    .typeString('Sviluppo Front-End')
+    .deleteChars(18)
+    .typeString('Arte 3D')
     .pauseFor(1000)
     .start();
 }

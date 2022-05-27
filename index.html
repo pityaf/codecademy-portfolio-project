@@ -9,7 +9,7 @@
         <meta name="description" content="Paolo Cantoreggi - aka Pityafinwe personal website/portfolio">
 
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="#"/>
+        <link rel="icon" type="image/png" href="./img/logo_PC.png"/>
 
         <!-- Import Roboto font family -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -38,16 +38,16 @@
                     <nav>
                         <ol class="link">
                             <li class="nav">
-                                <a href="#chisono">01.Chi Sono</a>
+                                <a href="#chisono">Chi Sono</a>
                             </li>
                             <li class="nav">
-                                <a href="#studilavori">02.Studi e Lavori</a>
+                                <a href="#studilavori">Studi e Lavori</a>
                             </li>
                             <li class="nav">
-                                <a href="#progetti">03.Ultimi Progetti</a>
+                                <a href="#progetti">Ultimi Progetti</a>
                             </li>
                             <li class="nav">
-                                <a href="#contatti">04.Contatti</a>
+                                <a href="#contatti">Contatti</a>
                             </li>
                             <li class="cv">
                                 <a href="./img/Cantoreggi_Paolo_CV.pdf" download>CV</a>
@@ -115,26 +115,105 @@
         </div>
 
         <!-- EDUCATION AND WORK EXPERIENCE-->
-        <div class="col-12">
+        <div id="studilavori" class="col-12">
             <div class="box">
-                <div class="education">
-
-                </div>
-                <div class="job">
-
+                <h2>Studi e Lavori</h2>
+                <div class="inner-box">
+                    <div class="content"> 
+                        <div class="content-box">
+                            <img src="./img/study_icon.png" alt="study-icon">
+                            <div class="yellow-stripe">
+                                <div></div>
+                            </div>
+                            <img src="./img/study_icon.png" alt="study-icon">
+                            <div class="yellow-stripe">
+                                <div></div>
+                            </div>
+                            <img src="./img/study_icon.png" alt="study-icon">
+                        </div>
+                        <div class="content-box">
+                            <div class="edu">
+                                <p>2008 - 2013</p>
+                                <p>Istituto statale d’istruzione superiore “J.M. Keynes” <br />
+                                    Istituto statale d’istruzione superiore “J.M. Keynes”
+                                    Perito industriale capotecnico-specializz: Informatica, Informatica
+                                </p>
+                            </div>
+                            <div class="edu">
+                                <p>2021</p>
+                                <p>CGBoost Academy - Blender 2.8 Launch Pad</p>
+                            </div>
+                            <div class="edu">
+                                <p>2021 - 2023</p>
+                                <p>Esperto in Digital Communication presso ITS Incom</p>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="content">
+                        <div class="content-box">
+                            <img src="./img/job_icon.png" alt="job-icon">
+                        </div>
+                        <div class="content-box">
+                            <div class="edu">
+                                <p>2022</p>
+                                <p>Stage presso Camera di Commercio Italo-Belga
+                                    Bruxelles
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- RECENT PROJECT-->
-        <div class="col-12">
+        <div id="progetti" class="col-12">
             <div class="project">
+                <div class="buttons">
+                    <button id="all" class="tab-button active" type="button" data-tag="all">Tutti i progetti</button>
+                    <button id="web" class="tab-button" type="button" data-tag="web">Web Design</button>
+                    <button id="fe" class="tab-button" type="button" data-tag="fe">Front-End</button>
+                    <button id="art" class="tab-button" type="button" data-tag="3D">3D Art</button>
+                </div>
 
+                <!--
+                    data-tab -----/> art - web - fe - 3D 
+                -->
+
+                <dic class="container">
+                    <div class="folders">
+                        <a href="https://www.artstation.com/artwork/aGDvwX" class="folder visible" data-tab="art">
+                            <img src="img/FogTower_1920x1920.jpg"/>
+                            <div class="project-desc">
+                                <p>Fog Tower - Blender 52 'Tower' <br /> 3D Art</p>
+                            </div>
+                        </a>
+                        <a href="https://www.artstation.com/artwork/aGDvwX" class="folder visible" data-tab="art">
+                            <img src="img/FogTower_1920x1920.jpg"/>
+                            <div class="project-desc">
+                                <p>Fog Tower - Blender 52 'Tower' <br /> 3D Art</p>
+                            </div>
+                        </a>
+                        <a href="https://www.artstation.com/artwork/aGDvwX" class="folder visible" data-tab="art">
+                            <img src="img/FogTower_1920x1920.jpg"/>
+                            <div class="project-desc">
+                                <p>Fog Tower - Blender 52 'Tower' <br /> 3D Art</p>
+                            </div>
+                        </a>
+                        <a href="https://www.artstation.com/artwork/aGDvwX" class="folder visible" data-tab="fe">
+                            <img src="img/FogTower_1920x1920.jpg"/>
+                            <div class="project-desc">
+                                <p>Fog Tower - Blender 52 'Tower' <br /> 3D Art</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
         <!-- CONTACT -->
-        <div class="col-12">
+        <div id="contatti" class="col-12">
             <div class="contact">
                 <h2>Rimaniamo in contatto</h2>
                 <p>

@@ -3,13 +3,10 @@
   }
 
 html, body {
+    font-family: 'Roboto', sans-serif;
     background-color: #221D23;
     font-size: 16px;
     color: white;
-}
-
-.yellow {
-    color: #F9AF2E;
 }
 
 /* GENERAL*/
@@ -19,9 +16,23 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+.yellow {
+    color: #F9AF2E;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 
 /* HEADER - NAVBAR*/
 .header {
+    background-color: #221D23;
     height: 80px;
     width: 1000px;
     display: flex;
@@ -35,6 +46,7 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
 }
 .navbar {
     display: flex;
@@ -146,15 +158,167 @@ html, body {
     justify-content: flex-start;
     align-items: flex-start;
     width: 1000px;
-    height: 200px;
+    height: 50vh;
 }
 .about h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #F9AF2E;
     font-size: 34px;
 }
 
+/* EDUCATION AND WORK EXPERIENCE*/
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+.inner-box {
+    background-color: #EAF2EF;
+    border: 1px solid #247BA0;
+    border-radius: 50px;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+}
+.content {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    margin-top: 25px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.content-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.content-box .yellow-stripe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.content-box img {
+    padding-bottom: 35px;
+    padding-top: 35px;
+}
+.edu {
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.edu p {
+    color: black;
+    font-size: 16px;
+    margin-top: 15px;
+    padding-left: 35px;
+}
+
+
+.box h2 {
+    margin-bottom: 30px;
+    color: #F9AF2E;
+    font-size: 34px;
+}
+.yellow-stripe div{
+    width: 2px;
+    height: 100px;
+    background-color: #F9AF2E;
+    border-radius: 100px;
+}
+
+
+
+/* RECENTE PROJECT */
+.project {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 100px;
+}
+.buttons {
+    font-size: 24px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding-bottom: 50px;
+}
+.active {
+    color: #F9AF2E;
+}
+.container {
+    width: 1000px;
+}
+.folders {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.folder {
+    display: none;
+    flex: 0 1 320px;
+    height: 320px;
+    transition: opacity .2s, visibility .2s;
+    position: relative;
+    z-index: 0;
+}
+
+.folder img {
+    max-width: 100%;
+    background-color: #EAF2EF;
+    border: 2px solid #247BA0;
+    border-radius: 50px;
+}
+
+.project-desc {
+    display: none;
+}
+.project-desc p {
+    color: #F9AF2E;
+    font-size: 18px;
+}
+.folder:hover .project-desc {
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    background: linear-gradient(rgba(255,0,0,0), rgba(0, 0, 0, 0.500));
+}
+.visible {
+    display: flex;
+}
+.non-visible {
+    display: none;
+}
+
+
+/* FOLDER PROJECT */
+.fog {
+    background-image: url(../img/FogTower_1920x1920.jpg);
+    background-size: contain;
+}
 
 
 
