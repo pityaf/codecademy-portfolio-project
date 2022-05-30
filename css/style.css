@@ -126,7 +126,7 @@ button {
     height: 405px;
 }
 .photo img {
-    border-radius: 70px;
+    border-radius: 50px;
 }
 .presentation {
     display: flex;
@@ -159,25 +159,29 @@ button {
     align-items: flex-start;
     width: 1000px;
     height: 50vh;
+    padding-top: 150px;
 }
 .about h2 {
-    margin-bottom: 30px;
+    padding-bottom: 50px;
     color: #F9AF2E;
     font-size: 34px;
 }
 
 /* EDUCATION AND WORK EXPERIENCE*/
+#studilavori {
+    padding-top: 150px;
+    margin-bottom: 150px;
+}
 .box {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-bottom: 50px;
 }
 .inner-box {
     background-color: #EAF2EF;
     border: 1px solid #247BA0;
-    border-radius: 50px;
+    border-radius: 35px;
     width: 1000px;
     height: 600px;
     display: flex;
@@ -283,7 +287,7 @@ button {
     max-width: 100%;
     background-color: #EAF2EF;
     border: 2px solid #247BA0;
-    border-radius: 50px;
+    border-radius: 35px;
 }
 
 .project-desc {
@@ -294,7 +298,7 @@ button {
     font-size: 18px;
 }
 .folder:hover .project-desc {
-    border-radius: 50px;
+    border-radius: 35px;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
