@@ -116,11 +116,14 @@ button {
 
 /*  smartphone - navbar*/
 @media screen and (max-width: 480px) {
+    #nav-desktop {
+        display: none;
+    }
     .header {
         width: 320px;
     }
     #mobile {
-        display: block;
+        display: flex;
     }
     .logotype {
         display: flex;
@@ -137,6 +140,9 @@ button {
     .cancel img {
         height: 40px;
         width: 40px;
+    }
+    #nav-mobile {
+        display: flex;
     }
     .navbar {
         height: 100%; /* 100% Full-height */
