@@ -1,5 +1,9 @@
 window.onload = function () {
-    let buttons = document.getElementsByClassName('tab-button');
+
+
+    /* Script that change folder tab in projects section*/
+
+    let buttons = document.getElementsByClassName('tab-button'); 
 
     Array.prototype.forEach.call(buttons, function(button) {
         button.addEventListener('click', function (e) {
@@ -20,6 +24,8 @@ window.onload = function () {
         })
     });
 
+
+    /*  slide the navigation bar in mobile*/ 
     let burger = document.getElementById('burger');
 
     /* Open the sidenav */
@@ -28,7 +34,7 @@ window.onload = function () {
     });
   
 
-
+    /** close the navigation bar in mobile */
     let cancel_btn = document.getElementsByClassName('cancel-btn');
 
     Array.prototype.forEach.call(cancel_btn, function(buttons) {
@@ -38,7 +44,7 @@ window.onload = function () {
     });
 
 
-
+    /** Text writer script in Hero section */
     let app = document.getElementById('text-writer');
 
     let typewriter = new Typewriter(app, {
