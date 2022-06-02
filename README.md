@@ -3,7 +3,8 @@ Codecademy first portfolio project - personal website
 
 Designed in Figma
 
-![Paolo_Cantoreggi_Portfolio_Pagina_1](https://user-images.githubusercontent.com/101053458/170962147-01c47411-d271-4ea9-be97-523085193c65.jpg)
+![Desktop - Onepage - Layout](https://user-images.githubusercontent.com/101053458/171703520-8f6c6c22-fa72-4826-8348-6504c7186b70.jpg)
 
 
-![Paolo_Cantoreggi_Portfolio_Pagina_2](https://user-images.githubusercontent.com/101053458/170962226-1bf08851-17cc-4dbb-80ab-c870dc96a431.jpg)
+![Android Large - onepage](https://user-images.githubusercontent.com/101053458/171703530-43cd78b4-cb62-4dab-976c-e62f6142b66d.jpg)
+![Android Large - burger menù](https://user-images.githubusercontent.com/101053458/171703553-1066ff3a-ad16-4fa3-b545-e0d5d7eab515.jpg)
