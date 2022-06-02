@@ -31,28 +31,70 @@
         <!-- HEADER -->
         <header class="col-12 fixed">
             <div class="header">
-                <div class="navbar">
-                    <div>
-                        <img class="logo" src="./img/logo_PC.png" alt="logo">
-                    </div>
+                <div class="logotype">
+                    <img class="logo" src="./img/logo_PC.png" alt="logo">
+                </div>
+                <div id="navbar" class="navbar">
                     <nav>
+                        <div class="logotype">
+                            <img class="logo" src="./img/logo_PC.png" alt="logo">
+                        </div>
                         <ol class="link">
                             <li class="nav">
-                                <a href="#chisono">Chi Sono</a>
+                                <a class="cancel-btn" href="#chisono">Chi Sono</a>
                             </li>
                             <li class="nav">
-                                <a href="#studilavori">Studi e Lavori</a>
+                                <a class="cancel-btn" href="#studilavori">Studi e Lavori</a>
                             </li>
                             <li class="nav">
-                                <a href="#progetti">Ultimi Progetti</a>
+                                <a class="cancel-btn" href="#progetti">Ultimi Progetti</a>
                             </li>
                             <li class="nav">
-                                <a href="#contatti">Contatti</a>
+                                <a class="cancel-btn" href="#contatti">Contatti</a>
                             </li>
                             <li class="cv">
                                 <a href="./img/Cantoreggi_Paolo_CV.pdf" download>CV</a>
                             </li>
                         </ol>
+                    </nav>
+                    <nav class="mobile-social">
+                        <div>
+                            <nav class="cancel">
+                                <button id="cancel cancel-btn" type="button" data-tag="cancel">
+                                    <img class="cancel-menu" src="./img/cancel.png" alt="burger">
+                                </button>
+                            </nav>
+                        </div>
+                        <ol class="social">
+                            <li class="nav">
+                                <a href="https://www.instagram.com/pityafinwe"><img class="logo" src="./img/instagram.png" alt="logo"></a>
+                            </li>
+                            <li class="nav">
+                                <a href="https://www.linkedin.com/in/paolocantoreggi"><img class="logo" src="./img/linkedin.png" alt="logo"></a>
+                            </li>
+                            <li class="nav">
+                                <a href="https://www.behance.net/paolocantoreggi"><img class="logo" src="./img/behance.jpg" alt="logo"></a>
+                            </li>
+                            <li class="nav">
+                                <a href="https://www.artstation.com/pityafinwe"><img class="logo" src="./img/artstation.png" alt="logo"></a>
+                            </li>
+                            <li class="nav">
+                                <a href="https://www.sketchfab.com/pityafinwe"><img class="logo" src="./img/sketchfab.png" alt="logo"></a>
+                            </li>
+                            <li class="nav">
+                                <a href="https://github.com/pityaf"><img class="logo" src="./img/GitHub-Mark-Light-32px.png" alt="logo"></a>
+                            </li>
+                            <li class="white-stripe">
+                                <div></div>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="mobile-burger">
+                    <nav class="burger">
+                        <button id="burger" type="button">
+                            <img class="burger-menu" src="./img/burger_menu.png" alt="burger">
+                        </button>
                     </nav>
                 </div>
             </div>
@@ -65,19 +107,22 @@
                 <nav>
                     <ol class="social">
                         <li class="nav">
-                            <a href="www.instagram.com/pityafinwe"><img class="logo" src="./img/instagram.png" alt="logo"></a>
+                            <a href="https://www.instagram.com/pityafinwe"><img class="logo" src="./img/instagram.png" alt="logo"></a>
                         </li>
                         <li class="nav">
-                            <a href="www.linkedin.com/paolocantoreggi"><img class="logo" src="./img/behance.jpg" alt="logo"></a>
+                            <a href="https://www.linkedin.com/in/paolocantoreggi"><img class="logo" src="./img/linkedin.png" alt="logo"></a>
                         </li>
                         <li class="nav">
-                            <a href="www.behance.com/paolocantoreggi"><img class="logo" src="./img/behance.jpg" alt="logo"></a>
+                            <a href="https://www.behance.net/paolocantoreggi"><img class="logo" src="./img/behance.jpg" alt="logo"></a>
                         </li>
                         <li class="nav">
-                            <a href="www.artstation/pityafinwe"><img class="logo" src="./img/artstation.png" alt="logo"></a>
+                            <a href="https://www.artstation.com/pityafinwe"><img class="logo" src="./img/artstation.png" alt="logo"></a>
                         </li>
                         <li class="nav">
-                            <a href="www.sketchfab.com/pityafinwe"><img class="logo" src="./img/sketchfab.png" alt="logo"></a>
+                            <a href="https://www.sketchfab.com/pityafinwe"><img class="logo" src="./img/sketchfab.png" alt="logo"></a>
+                        </li>
+                        <li class="nav">
+                            <a href="https://github.com/pityaf"><img class="logo" src="./img/GitHub-Mark-Light-32px.png" alt="logo"></a>
                         </li>
                     </ol>
                 </nav>
@@ -97,7 +142,7 @@
                         <p>Faccio cosa su web con lo speudonino <span class="nick">Pityafinwe</span>.</p>
                 </div>
                 <div class="photo">
-                    <img class="profile-picture" src="./img/FotoProfiloFull.jpg" alt="profile-picture">
+                    <img src="./img/FotoProfilo.jpg" alt="profile-picture">
                 </div>
             </div>
         </div>
@@ -135,8 +180,7 @@
                             <div class="edu">
                                 <p>2008 - 2013</p>
                                 <p>Istituto statale d’istruzione superiore “J.M. Keynes” <br />
-                                    Istituto statale d’istruzione superiore “J.M. Keynes”
-                                    Perito industriale capotecnico-specializz: Informatica, Informatica
+                                    Perito industriale capotecnico-specializz: Informatica.
                                 </p>
                             </div>
                             <div class="edu">
@@ -170,10 +214,10 @@
         <div id="progetti" class="col-12">
             <div class="project">
                 <div class="buttons">
-                    <button id="all" class="tab-button active" type="button" data-tag="all">Tutti i progetti</button>
-                    <button id="web" class="tab-button" type="button" data-tag="web">Web Design</button>
+                    <button id="all" class="tab-button active" type="button" data-tag="all">Tutto</button>
+                    <button id="web" class="tab-button" type="button" data-tag="web">Design</button>
                     <button id="fe" class="tab-button" type="button" data-tag="fe">Front-End</button>
-                    <button id="art" class="tab-button" type="button" data-tag="3D">3D Art</button>
+                    <button id="art" class="tab-button" type="button" data-tag="3D">3D</button>
                 </div>
 
                 <!--
@@ -197,7 +241,7 @@
                         <a href="https://www.behance.net/gallery/144862203/Photoghraphy-portfolio-design" class="folder visible" data-tab="web">
                             <img src="img/photography_portfolio_design.jpg"/>
                             <div class="project-desc">
-                                <p>Firt photography portfolio design<br /> Web Design</p>
+                                <p>First photography portfolio design<br /> Web Design</p>
                             </div>
                         </a>
                     </div>

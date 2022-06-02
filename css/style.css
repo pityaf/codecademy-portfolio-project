@@ -9,6 +9,12 @@ html, body {
     color: white;
 }
 
+
+
+
+
+
+
 /* GENERAL*/
 .col-12 {
     display: flex;
@@ -30,14 +36,19 @@ button {
 	outline: inherit;
 }
 
+/*  smartphone - general */
+@media screen and (max-width: 480px) {
+
+}
+
 /* HEADER - NAVBAR*/
 .header {
     background-color: #221D23;
     height: 80px;
     width: 1000px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-content: center;
 }
 .fixed {
@@ -83,6 +94,91 @@ button {
     height: 35px;
     text-align: center;
 }
+.burger {
+    display: none;
+}
+.burger-menu {
+    height: 40px;
+    width: 40px;
+}
+.mobile-burger {
+    display: none;
+}
+.mobile-social {
+    display: none;
+}
+
+/*  smartphone - navbar*/
+@media screen and (max-width: 480px) {
+    .header {
+        width: 320px;
+    }
+    .logotype {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .mobile-burger {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .cancel img {
+        height: 40px;
+        width: 40px;
+    }
+    .navbar {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #221D23;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .navbar nav {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .link {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .burger {
+        display: block;
+    }
+    .mobile-social {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between    ;
+    }
+    .white-stripe {
+        margin-bottom: -15px;
+    }
+    .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
 
 /* SIDE SOCIAL ICON */
 .side{
@@ -113,6 +209,16 @@ button {
     border-radius: 100px;
 }
 
+/*  smartphone - sidebar */
+@media screen and (max-width: 480px) {
+    .side {
+        display: none;
+    }
+}
+
+
+
+
 /* HERO - SECTION*/
 .hero {
     width: 1000px;
@@ -121,12 +227,10 @@ button {
     align-items: center;
     justify-content: space-between;
 }
-.photo {
-    width: 405px;
-    height: 405px;
-}
 .photo img {
     border-radius: 50px;
+    width: 405px;
+    height: 405px;
 }
 .presentation {
     display: flex;
@@ -151,6 +255,27 @@ button {
     color: #F9AF2E;
 }
 
+/*  smartphone - navbar*/
+@media screen and (max-width: 480px) {
+    .hero {
+        width: 320px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content:space-around;
+        align-content: center;
+        margin-top: 50px;
+    }
+    .photo img{
+        width: 320px;
+        height: 320px;
+    }
+}
+
+
+
+
 /* ABOUT ME */
 .about {
     display: flex;
@@ -166,6 +291,17 @@ button {
     color: #F9AF2E;
     font-size: 34px;
 }
+
+/*  smartphone - about */
+@media screen and (max-width: 480px) {
+    .about {
+        width: 320px;
+    }
+}
+
+
+
+
 
 /* EDUCATION AND WORK EXPERIENCE*/
 #studilavori {
@@ -213,15 +349,16 @@ button {
 }
 .edu {
     height: 100%;
+    width: fit-content;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-bottom: 30px;
 }
 .edu p {
     color: black;
     font-size: 16px;
-    margin-top: 15px;
     padding-left: 35px;
 }
 
@@ -237,6 +374,24 @@ button {
     background-color: #F9AF2E;
     border-radius: 100px;
 }
+
+
+
+/*  smartphone - study  */
+@media screen and (max-width: 480px) {
+    .inner-box {
+        width: 320px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .yellow-stripe {
+        height: 95px;
+    }
+}
+
+
+
 
 
 
@@ -308,7 +463,7 @@ button {
     top: 0;
     left: 0;
     padding: 30px;
-    background: linear-gradient(rgba(255,0,0,0), rgba(0, 0, 0, 0.500));
+    background: linear-gradient(rgba(255,0,0,0), rgba(0, 0, 0, 0.8));
 }
 .visible {
     display: flex;
@@ -318,11 +473,22 @@ button {
 }
 
 
-/* FOLDER PROJECT */
-.fog {
-    background-image: url(../img/FogTower_1920x1920.jpg);
-    background-size: contain;
+
+/*  smartphone - project  */
+@media screen and (max-width: 480px) {
+    .project {
+        width: 320px;   
+    }
+    .buttons {
+        width: 100%;
+    }
+
+    .container {
+        width: 320px;
+    }
 }
+
+
 
 
 
@@ -345,7 +511,6 @@ button {
     margin-top: 50px;
     color: #F9AF2E;
     padding: 0px 10px 0px 10px;
-    margin-left: 15px;
     border: 1px solid #F9AF2E;
     border-radius: 10px;
     width: 120px;
@@ -356,6 +521,15 @@ button {
     align-items: center;
 }
 
+/*  smartphone - contact  */
+@media screen and (max-width: 480px) {
+    .contact {
+        width: 320px;
+        text-align: center;
+    }
+}
+
+
 /* FOOTER */
 .footer {
     display: flex;
@@ -364,4 +538,11 @@ button {
     align-items: center;
     width: 1000px;
     height: 80px;
+}
+
+/*  smartphone - study  */
+@media screen and (max-width: 480px) {
+    .footer {
+        width: 320px;
+    }
 }

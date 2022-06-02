@@ -20,6 +20,25 @@ window.onload = function () {
         })
     });
 
+    let burger = document.getElementById('burger');
+
+    /* Open the sidenav */
+    burger.addEventListener('click', function(e) {
+        document.getElementById('navbar').style.width = "100%";
+    });
+  
+
+
+    let cancel_btn = document.getElementsByClassName('cancel-btn');
+
+    Array.prototype.forEach.call(cancel_btn, function(buttons) {
+        buttons.addEventListener('click', function(e) {
+            document.getElementById('navbar').style.width = '0';
+        });
+    });
+
+
+
     let app = document.getElementById('text-writer');
 
     let typewriter = new Typewriter(app, {
@@ -33,7 +52,7 @@ window.onload = function () {
     .typeString('Web Design')
     .pauseFor(300)
     .deleteChars(10)
-    .typeString('Sviluppo front-End')
+    .typeString('Sviluppo Front-End')
     .pauseFor(300)
     .deleteChars(18)
     .typeString('Arte 3D')
