@@ -107,11 +107,20 @@ button {
 .mobile-social {
     display: none;
 }
+#mobile {
+    display: none;
+}
+#nav-mobile {
+    display: none;
+}
 
 /*  smartphone - navbar*/
 @media screen and (max-width: 480px) {
     .header {
         width: 320px;
+    }
+    #mobile {
+        display: block;
     }
     .logotype {
         display: flex;
