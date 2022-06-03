@@ -50,6 +50,7 @@ button {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    padding-top: 10px;
 }
 .fixed {
     display: flex;
